@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Department</title>
+        <link rel="stylesheet" type="text/css" href="departmentJ.css">
+        <script type="text/javascript" src="departmentJ.js"></script>
+    </head>
+    <body>
+ <div class="container">
+<form action="welcomepageJ.html">
+  <fieldset>
+  <legend>Enter your Details</legend>
+  <label class="req" for="dname">Department name</label>
+  <input type="text" id="dname" name="dname" maxlength="30" placeholder="Enter department name..." required onkeyup="AllowOnlyAlphaNumeric(this)"><br><br>
+  <label class="req" for="deptd">Department description</label><br>
+  <textarea rows="4" cols="30" name="comment" placeholder="Enter text here..." maxlength="50"  required ></textarea><br><br>
+
+  <label class="req" for="doctor">No of Doctors</label>
+  <input type="text" id="doctor" name="doctor" required onkeyup="AllowOnlyNumeric(this)" ><br><br>
+  <label class="req" for="generalroom">Number of general rooms</label>
+  <input type="number" id="generalroom" name="generalroom" required><br><br>
+  <label class="req" for="acroom">Number of AC rooms</label>
+  <input type="number" id="acroom" name="acroom" required><br><br>
+  <label class="req" for="nacroom">Number of Non-AC rooms</label>
+  <input type="number" id="nacroom" name="nacroom" required><br><br>
+  <label  class="req" for="icu">Number of ICU</label>
+  <input type="number" id="icu" name="icu" required><br><br>
+
+  <label class="req" for="groom">Cost of general room</label>
+  <input type="text" id="groom" name="groom" required><br><br>
+  <label class="req" for="aroom">Cost of AC room</label>
+  <input type="text" id="aroom" name="aroom" required><br><br>
+  <label class="req" for="nroom">Cost of Non-AC room</label>
+  <input type="text" id="nroom" name="nroom" required><br><br>
+  <label class="req" for="icuc">Cost of ICU</label>
+  <input type="text" id="icuc" name="icuc" required><br><br>
+  <input type="submit" value="Submit">
+  </fieldset>
+</form>
+</div> 
+    </body>
+</html>

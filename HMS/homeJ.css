@@ -1,0 +1,46 @@
+body
+{
+	background-image: url(images/bg.png);
+}
+
+.heading h1
+{
+  font-size: 32px;
+  text-align: center;
+  margin-left: 39%;
+  margin-right:40%;
+  border: 2px white solid;
+  background-color: gray;
+  margin-top: 5%;
+  color: snow;
+}
+
+.add
+{
+  border: 8px gray solid;
+  border-radius: 30px;
+  margin: auto;
+  width: 30%;
+}
+.add h2
+{
+  text-align: center;
+  color: snow;
+  margin-top: 30px;
+  line-height: 2em;
+}
+
+.add h2:first-of-type
+{
+  margin-top: 3%;
+}
+
+.add a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: blueviolet;
+}

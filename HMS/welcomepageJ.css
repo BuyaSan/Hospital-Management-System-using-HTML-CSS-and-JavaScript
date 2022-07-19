@@ -1,0 +1,28 @@
+body
+{
+	background-image: url(images/bg.png);
+}
+
+h1
+{
+	color: white;
+	margin-left: 37%;
+	font-size: 50px;
+}
+
+fieldset
+{
+	margin-top: 10%;
+	margin-left: 27%;
+	width: 50%;
+	border: 7px wheat solid;
+	padding-top: 90px;
+    padding-bottom: 90px;	
+
+}
+
+legend
+{
+	font-size: 70px;
+	color: whitesmoke;
+}

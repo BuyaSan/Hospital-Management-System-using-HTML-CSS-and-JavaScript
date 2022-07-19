@@ -1,0 +1,52 @@
+body
+{
+ background-image: url('images/doc.png');
+ color: white;
+}
+
+.req::after
+{
+	content: " *";
+	color: red;
+}
+fieldset
+{
+	margin: 2em 0;
+	padding: 1em 2em;
+	border: solid 1ps grey;
+	border-radius: 6px;
+	min-width: 100px;
+}
+
+legend
+{
+	font-size: 29px;
+	padding: 0 .25em;
+	color: #999;
+}
+
+label
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="tel"]
+{
+    display: block;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+input[type="checkbox"]
+{
+ margin-left: 20px;
+}
+
+input[type="submit"]
+{
+	padding: 10px 10px 10px 10px;
+	border-radius: 4px;
+	background-color: gray;
+	color: white;
+}

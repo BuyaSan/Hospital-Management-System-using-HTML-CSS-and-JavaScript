@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Doctor</title>
+        <link rel="stylesheet" type="text/css" href="doctorJ.css">
+        <script type="text/javascript" src="doctorJ.js"></script>
+    </head>
+    <body> 
+<div class="contianer">
+<form id="dform" action="welcomepageJ.html">
+  <fieldset>
+  <legend>Enter your Details</legend>
+  <label for="fname" style="float: left;">Name</label><br>
+  <input type="text" id="fname" name="fname" placeholder="First name" maxlength="20" onkeyup="AllowOnlyAlpha(this)" required style="float: left;">
+  <input type="text" id="mname" name="mname" placeholder="Middle name" onkeyup="AllowOnlyAlpha(this)" style="float: left; margin-right: 2px;">
+  <input type="text" id="lname" name="lname" placeholder="Last name" maxlength="20" onkeyup="AllowOnlyAlpha(this)" required ><br><br>
+  <label class="req"for="regno">Registration Number</label>
+  <input type="text" id="regno" name="regno" required><br><br>
+  <label class="req" for="dob">Date of Birth</label>
+  <input type="date" id="dob" name="dob" required><br><br>
+  <label for="gender">Gender</label>
+  <input type="radio" id="gender" name="gender" value="Male" style="margin-left:20px">
+  <label for="male">Male</label>
+  <input type="radio" id="gender" name="gender" value="Female">
+  <label for="female">Female</label>
+  <input type="radio" id="gender" name="gender" value="Other">
+  <label for="other">Other</label><br><br>
+  <label for="email">Email</label>
+  <input class="req" type="text" id="email"  name="email" onkeydown="emailval()" required >
+  <span id="text"></span>
+  <br><br>
+  <label class="req" for="specialization">Specialization</label>
+  <input type="text" id="specialization" name="specialization" required><br><br>
+  <label class="req" for="qualification">Qualification</label>
+  <input type="text" id="qualification" name="qualification" required><br><br>
+  <label class="req"for="contact">Contact Number</label>
+  <input type="tel" id="contact" name="phone" pattern="[0-9]{3}[0-9]{4}[0-9]{3}" maxlength="10" required onkeyup="AllowOnlyNumeric(this)"><br><br>
+  <label style="float: left;">Address</label><br>
+  <input type="text" id="no" name="flatDoor" placeholder="Door number/Flat number" style="float: left;" >
+  <input type="text" id="Street" name="Street" placeholder="Street" style="float: left;" >
+  <input type="text" id="area" name="area"  placeholder="Area" style="float: left;">
+  <input type="text" id="city" name="city" placeholder="city" style="float: left; margin-left: 3px; margin-right: 2px;">
+  <input type="text" id="pin" name="pin" placeholder="Pincode" ><br><br>
+  
+  <label for="vdys">Visiting Days</label><br>
+  <input type="checkbox" id="sun" name="sun"  style="margin-top: 10px;">
+  <label for="sun"> Sunday</label><br>
+  <input type="checkbox" id="mon" name="mon">
+  <label for="mon"> Monday</label><br>
+  <input type="checkbox" id="tue" name="tue">
+  <label for="tue"> Tuesday</label><br>
+  <input type="checkbox" id="wed" name="wed">
+  <label for="wed"> Wednesday</label><br>
+  <input type="checkbox" id="thr" name="thr">
+  <label for="thr"> Thursday</label><br>
+  <input type="checkbox" id="fri" name="fri">
+  <label for="fri"> Friday</label><br>
+  <input type="checkbox" id="sat" name="sat">
+  <label for="sat"> Saturday</label><br><br>
+
+  <label for="vtime">Visiting Time</label>
+  <select name="vtime" id="vtime">
+    <option value="mrng">Morning</option>
+    <option value="aftn">Afternoon</option>
+    <option value="evng">Evening</option>
+  </select>
+  <br><br>
+
+  <label for="patient">No of Patients/Day</label>
+  <input type="number" id="patient" name="patient" onkeyup="AllowOnlyNumeric(this)" style="margin-left: 20px;" ><br><br>
+  <label for="deptno">Department Number</label>
+  <input type="number" id="deptno" name="deptno" onkeyup="AllowOnlyNumeric(this)" style="margin-left: 5px;"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</fieldset>
+</div>
+    </body>
+</html>
