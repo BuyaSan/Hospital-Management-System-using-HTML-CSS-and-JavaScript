@@ -1,16 +1,19 @@
-body
-{
-	background-image: url(images/bg.png);
+* {
+  width: 0;
+  height: 0;
+  background-image: url(images/bdd.png);
 }
 
-h1
-{
-	color: white;
-	margin-left: 37%;
-	font-size: 50px;
+body {
 }
 
-fieldset
+h1 {
+  color: white;
+  margin-left: 37%;
+  font-size: 50px;
+}
+
+/*fieldset
 {
 	margin-top: 10%;
 	margin-left: 27%;
@@ -25,4 +28,4 @@ legend
 {
 	font-size: 70px;
 	color: whitesmoke;
-}
+}*/
